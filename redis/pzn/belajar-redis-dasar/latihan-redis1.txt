@@ -1,0 +1,161 @@
+-- use database
+select 0
+
+-- add data to database
+set test "Muhamad Yasir Noval"
+
+-- get data
+get test
+
+-- mengecek apakah data test ada atau tidak ada
+exists test
+
+-- menambahkan value di akhir
+append test " Noval"
+
+-- mencetak seluruh keys yang ada di database
+keys *
+
+-- mencetak seluruh keys yang berawalan t
+keys t*
+
+-- menghapus data test
+del test
+
+get test
+
+set yasir "Muhamad Yasir Novar"
+
+get yasir
+
+setrange yasir 8 "Yasir Noval"
+
+get yasir
+
+getrange yasir 8 19
+
+getrange yasir 8 14
+
+mset laptop "100" smartphone "400" cellphone "200"
+
+keys *
+
+mget laptop smartphone cellphone
+
+ttl yasir
+
+expire yasir 5
+
+ttl yasir
+
+get yasir
+
+keys *
+
+setex yasir 10 "Muhamad Yasir Noval"
+
+ttl yasir
+
+get yasir
+
+ttl yasir
+
+get yasir
+
+get counter
+
+incr counter
+
+decr counter
+
+incrby counter 4
+
+decrby counter 7
+
+get counter
+
+keys *
+
+flushdb
+
+mget laptop smartphone cellphone
+
+flushall
+
+-- memasukan data dari file input-file.txt
+redis-cli -h localhost -p 6379 -n 0 --pipe < input-file.txt
+
+-- monitoring
+monitor
+
+set yasir "Muhamad Yasir Noval"
+set derek "Derek Westbrook"
+set gary "Gary Sanderson"
+set james "James Ramirez"
+set paul "Paul Jackson"
+
+keys *
+
+mget yasir derek gary james paul
+
+-- start transaction
+multi
+
+set apple "Apple"
+
+get apple
+
+set samsung "Samsung"
+
+set xiaomi "Xiaomi"
+
+-- save transaction
+exec
+
+-- start transaction
+multi
+
+set satu "Satu"
+
+set dua "Dua"
+
+set tiga "tiga"
+
+get satu
+
+get dua
+
+get tiga
+
+-- discard transaction
+discard
+
+mget samsung xiaomi apple
+
+set test "Testing"
+
+info
+
+config get database
+
+config get bind
+
+config get port
+
+client list
+
+client id
+
+client kill 172.17.0.1:34796
+
+-- auth yasir rahasia
+
+save
+
+set programmer "programmer"
+
+set zaman "zaman"
+
+set now "now"
+
+mget programmer zaman now

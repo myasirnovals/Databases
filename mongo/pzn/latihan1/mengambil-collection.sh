@@ -1,0 +1,2 @@
+# Mengambil collection
+db.getCollectionNames()
