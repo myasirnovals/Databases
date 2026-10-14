@@ -1,0 +1,28 @@
+[
+  {
+    "nama_produk": "Desktop PC Gaming",
+    "kategori": "PC",
+    "harga": 12000000,
+    "stok": 10,
+    "spesifikasi": {
+      "prosesor": "Intel Core i5-12400F",
+      "ram": "16GB DDR4",
+      "penyimpanan": "512GB SSD NVMe",
+      "kartu_grafis": "NVIDIA GeForce RTX 3060",
+      "daya_psu": "550W"
+    }
+  },
+  {
+    "nama_produk": "Smartphone Pro 5G",
+    "kategori": "Smartphone",
+    "harga": 4500000,
+    "stok": 25,
+    "spesifikasi": {
+      "layar": "6.5 inci Super AMOLED",
+      "ram": "8GB",
+      "penyimpanan": "128GB",
+      "kamera": "50 MP",
+      "baterai": "5000 mAh"
+    }
+  }
+]
